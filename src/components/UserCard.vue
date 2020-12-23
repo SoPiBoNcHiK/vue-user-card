@@ -3,8 +3,7 @@
     <img v-bind:src="avatar" class="user-photo" />
     <p class="user-nickname">{{login}}</p>
     <p class="user-name">
-      {{lastname + ' ' + firstname}}<br />
-      {{patronymic}}
+      {{lastname + ' ' + firstname}}
     </p>
     <hr />
     <p class="user-info-item">
@@ -26,7 +25,7 @@
 export default {
   name: "UserCard",
   props: [
-      'avatar', 'lastname', 'firstname', 'patronymic', 'login', 'adress', 'phone', 'email'
+      'avatar', 'lastname', 'firstname', 'login', 'adress', 'phone', 'email'
   ]
 };
 </script>
